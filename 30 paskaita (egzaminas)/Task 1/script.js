@@ -20,9 +20,11 @@ e.preventDefault();
     console.log(gramai);
     let uncijos = Kg*35.274;
     console.log(uncijos.toFixed(2));
-    document.querySelector("#output").textContent= ("Svoris svarai - "+svarai.toFixed(2) +" lb");
-    document.querySelector("#output").textContent= ("Svoris gramais - "+gramai +" g");
-  //  document.querySelector("#output").textContent= ("Svoris uncijomis - "+uncijos.toFixed(2) +" oz") ;
+
+
+    document.querySelectorAll("#output")[0].textContent= ("Svoris svarais - "+svarai.toFixed(2) +" lb");
+    document.querySelectorAll("#output")[1].textContent= ("Svoris gramais - "+gramai +" g");
+    document.querySelectorAll("#output")[2].textContent= ("Svoris uncijomis - "+uncijos.toFixed(2) +" oz") ;
 
 
 });
