@@ -19,3 +19,21 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+let a=0;
+console.log(users.length)
+users.forEach(item => {
+  ave=+item.age;
+  console.log(a);
+  //console.log(age[i]);
+  console.log(item.age);
+});
+ 
+  console.log(a);
+  let b=(a/(users.lenght));
+  console.log(b);
+ // console.log(users.age[i]);
+
+
+
+ const average = users.age => users.age.reduce((a,b) => a + b, 0) / users.length;
+ console.log(average);
