@@ -19,3 +19,22 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+// 1. funkcija "filterDogOwers" - kaip argumentą priims masyvą ir duoto masyvo 
+// atveju grąžins "users", kurie turi augintin5.
+users.forEach((item) => {
+  if (item.hasDog== true){
+    console.log(item.name);
+  }
+})
+
+// 2. funkcija "filterAdults" - kaip argumentą priims masyvą ir duoto masyvo 
+// atveju grąžins masyvą su "users", kurie yra pilnamečiai.
+users.forEach((item) => {
+  if (item.age>17){
+    console.log(item.name);
+  }
+})
+
+
+//padariau kaip supratau. Atvaizdavimas consolėje.
