@@ -20,20 +20,36 @@ const users = [
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
 let a=0;
-console.log(users.length)
-users.forEach(item => {
+console.log(users.length);
+// console.log(users.id[2]);
+// document.textContent.innerHTML = users.id;
+
+console.log(users.filter(avg => avg.age reduce((a,b) => a + b, 0) / users.length));
+
+
+
+ users.forEach((item) => {
   ave=+item.age;
-  console.log(a);
-  //console.log(age[i]);
-  console.log(item.age);
+  console.log(ave);
+  //console.log(age);
+  
 });
+
+// users.forEach((item) => {
+//   if (item.hasDog== true){
+//     console.log(item.name);
  
-  console.log(a);
+// for(i=0; i<users.length; i++){
+//   console.log(users.id[i])
+//}
+
+
+  console.log(ave);
   let b=(a/(users.lenght));
   console.log(b);
  // console.log(users.age[i]);
 
 
 
- const average = users.age => users.age.reduce((a,b) => a + b, 0) / users.length;
- console.log(average);
+ //const average = users.age => users.age.reduce((a,b) => a + b, 0) / users.length;
+ //console.log(average);
